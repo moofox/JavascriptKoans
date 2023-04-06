@@ -19,7 +19,7 @@ describe('1-Tests.js', () => {
     // tienes que hacer, que el valor que hay dentro del expect sea
     // el mismo que hay dentro del toBe. (Recuerda salvar los cambios de este
     // fichero y recargar el navegador)
-    expect('¡Arreglame, please!').toBe('Arreglado')
+    expect('¡Arreglame, please!').toBe('¡Arreglame, please!')
   })
   // ¡Bien! Has puesto en verde tu primer test, seguro que lo has podido comprobar
   // en tu navegador. ¡Ahora a ponerlos todos en verde!
