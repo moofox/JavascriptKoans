@@ -1,7 +1,5 @@
 # Javascript Koans
 
-[Ruta para ver los test](https://moofox.github.io/JavascriptKoans/index.html)
-
 Un kōan es un término que viene del Zen y se refiere a la prueba que le pone un maestro a su aprendiz para ver su progreso.
 
 El objetivo de estas koans es aprender el lenguaje, la sintaxis, la estructura de Javascript y al mismo tiempo que aprendemos a programar. Todo mediante pruebas (tests desde ahora). También se quiere introducir al TDD (desarrollo guiado por tests) que originalmente forma parte de la metodología de XP (Extreme programming).
