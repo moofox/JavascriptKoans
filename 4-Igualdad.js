@@ -10,17 +10,17 @@ describe('4-Igualdad.js', () => {
     // si son diferentes, devuelve false
     expect(false === true).toBe(false)
     // continua tu ^^
-    expect(true === false).toBe(RellenameCorrectamente)
-    expect(false === false).toBe(RellenameCorrectamente)
+    expect(true === false).toBe(false)
+    expect(false === false).toBe(true)
   })
 
   it('la diferencia se representa con "!=="', () => {
     // Recuerda que hacia el operador lógico "!" y juntalo con la igualdad
     // ¿eres capaz de imaginar como funciona?
-    expect(true !== true).toBe(RellenameCorrectamente)
-    expect(false !== true).toBe(RellenameCorrectamente)
-    expect(true !== false).toBe(RellenameCorrectamente)
-    expect(false !== false).toBe(RellenameCorrectamente)
+    expect(true !== true).toBe(false)
+    expect(false !== true).toBe(true)
+    expect(true !== false).toBe(true)
+    expect(false !== false).toBe(false)
     // ¡HEY! Será, ¿que recuerdas los tests anteriores? ;P
   })
 
@@ -30,20 +30,20 @@ describe('4-Igualdad.js', () => {
     // Puede que veas expectaciones que no sepas resolver. Si es así
     // Skippea este test (cambiando el "it" por "skip") y en unas cuantos
     // ficheros de koans, vuelves a intentarlo.
-    expect('Texto' === 'Texto').toBe(RellenameCorrectamente)
-    expect(`Texto` === `Texto`).toBe(RellenameCorrectamente)
-    expect("Texto" === "Texto").toBe(RellenameCorrectamente)
-    expect(2021 === 2021).toBe(RellenameCorrectamente)
-    expect(12.18 === 12.18).toBe(RellenameCorrectamente)
+    expect('Texto' === 'Texto').toBe(true)
+    expect(`Texto` === `Texto`).toBe(true)
+    expect("Texto" === "Texto").toBe(true)
+    expect(2021 === 2021).toBe(true)
+    expect(12.18 === 12.18).toBe(true)
     // WTF!!!!
-    expect(null === null).toBe(RellenameCorrectamente)
-    expect(undefined === undefined).toBe(RellenameCorrectamente)
-    expect({} === {}).toBe(RellenameCorrectamente) // Cosas de Javascript ;P
-    expect([] === []).toBe(RellenameCorrectamente) // Cosas de Javascript ;P
+    expect(null === null).toBe(true)
+    expect(undefined === undefined).toBe(true)
+    expect({} === {}).toBe(true) // Cosas de Javascript ;P
+    expect([] === []).toBe(true) // Cosas de Javascript ;P
     // Cuidado!
-    expect('2021' === 2021).toBe(RellenameCorrectamente)
-    expect(null === undefined).toBe(RellenameCorrectamente)
-    expect("Texto" === `Texto`).toBe(RellenameCorrectamente)
+    expect('2021' === 2021).toBe(fals)
+    expect(null === undefined).toBe(false)
+    expect("Texto" === `Texto`).toBe(false)
   })
 
   it('con este tambien se pueden usar los parentesis para las evaluaciones', () => {

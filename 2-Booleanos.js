@@ -6,11 +6,12 @@ describe('2-Booleanos.js', () => {
   it('cual de los dos es verdadero', () => {
     //¿false o true?
     expect(true).toBeTruthy()
-  })
 
+  })
+  
   it('cual de los dos es falso', () => {
     //¿false o true?
-    expect(RellenameCorrectamente).toBeFalsy()
+    expect(false).toBeFalsy()
   })
 
   //¡WoW! ¿Difícil? ^^
