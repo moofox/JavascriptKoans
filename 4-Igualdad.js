@@ -38,18 +38,18 @@ describe('4-Igualdad.js', () => {
     // WTF!!!!
     expect(null === null).toBe(true)
     expect(undefined === undefined).toBe(true)
-    expect({} === {}).toBe(true) // Cosas de Javascript ;P
-    expect([] === []).toBe(true) // Cosas de Javascript ;P
+    expect({} === {}).toBe(false) // Cosas de Javascript ;P
+    expect([] === []).toBe(false ) // Cosas de Javascript ;P
     // Cuidado!
-    expect('2021' === 2021).toBe(fals)
+    expect('2021' === 2021).toBe(false )
     expect(null === undefined).toBe(false)
-    expect("Texto" === `Texto`).toBe(false)
+    expect("Texto" === `Texto`).toBe(true)
   })
 
   it('con este tambien se pueden usar los parentesis para las evaluaciones', () => {
     expect(( 1 === 1) === ( 1 === 1)).toBe(true)
     // ¿Te atreves? ^^
-    expect(( 1 === 1) === ( 2 === 2)).toBe(RellenameCorrectamente)
+    expect(( 1 === 1) === ( 2 === 2)).toBe(true)
     // Por si no lo has entendido:
     // (1 === 1) se combierte en true
     // (2 === 2) se combierte en true
@@ -59,8 +59,8 @@ describe('4-Igualdad.js', () => {
   })
   it('se puede mezclar con los operadores lógicos', () => {
     // ¡Aquí empieza la fiesta!
-    expect((true && true) === (false || true)).toBe(RellenameCorrectamente)
-    expect((true || false) !== (false && true)).toBe(RellenameCorrectamente)
+    expect((true && true) === (false || true)).toBe(true)
+    expect((true || false) !== (false && true)).toBe(true)
   })
 
   it('la antigua igualdad, que se representa con "=="', () => {
@@ -70,12 +70,12 @@ describe('4-Igualdad.js', () => {
     // La antigua igualdad puede dar como iguales o diferentes cosas
     // que no esperamos. Y por eso se usa la nueva, que es mas predecible.
     // ¿Comó que puede evaluar cosas que no esperamos?
-    expect(0 == false).toBe(RellenameCorrectamente)
-    expect('1' ==  1).toBe(RellenameCorrectamente)
+    expect(0 == false).toBe(true)
+    expect('1' ==  1).toBe(true)
     // Te puedes encontrar en muchos sitios la antigua igualdad.
     // Pero evita utilizarla todo lo que puedes y usa la nueva.
-    expect(0 === false).toBe(RellenameCorrectamente)
-    expect('1' ===  1).toBe(RellenameCorrectamente)
+    expect(0 === false).toBe(false)
+    expect('1' ===  1).toBe(false)
   })
   // Un montón de cosas nuevas.
   // Sin prisa, pero sin pausa ;)
